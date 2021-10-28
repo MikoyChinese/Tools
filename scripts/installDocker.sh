@@ -15,11 +15,11 @@ sudo apt-get install -y \
     software-properties-common
     
 # Add Docker's official GPG key:
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+curl -fsSL https://mirrors.aliyun.com/docker-ce/linux/ubuntu/gpg | sudo apt-key add -
 
-# Set up the stable repository for ustc docker mirrors repository.
+# Set up the stable repository for ustc docker mirrors repository.[For Jetson Nano: arch=arm64]
 sudo add-apt-repository \
-   "deb [arch=amd64] https://mirrors.ustc.edu.cn/docker-ce/linux/ubuntu \
+   "deb [arch=amd64] https://mirrors.aliyun.com/docker-ce/linux/ubuntu \
    $(lsb_release -cs) \
    stable"
    

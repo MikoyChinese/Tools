@@ -34,20 +34,20 @@ fi
 
 [ -f /etc/apt/sources.list ] && rm /etc/apt/sources.list
 
-echo "deb https://mirrors.ustc.edu.cn/ubuntu/ $release main restricted universe multiverse" >> /etc/apt/sources.list
-echo "deb-src https://mirrors.ustc.edu.cn/ubuntu/ $release main restricted universe multiverse" >> /etc/apt/sources.list
+echo "deb https://mirrors.aliyun.com/ubuntu/ $release main restricted universe multiverse" >> /etc/apt/sources.list
+echo "deb-src https://mirrors.aliyun.com/ubuntu/ $release main restricted universe multiverse" >> /etc/apt/sources.list
 echo -e "\n" >> /etc/apt/sources.list
-echo "deb https://mirrors.ustc.edu.cn/ubuntu/ $release-security main restricted universe multiverse" >> /etc/apt/sources.list
-echo "deb-src https://mirrors.ustc.edu.cn/ubuntu/ $release-security main restricted universe multiverse" >> /etc/apt/sources.list
+echo "deb https://mirrors.aliyun.com/ubuntu/ $release-security main restricted universe multiverse" >> /etc/apt/sources.list
+echo "deb-src https://mirrors.aliyun.com/ubuntu/ $release-security main restricted universe multiverse" >> /etc/apt/sources.list
 echo -e "\n" >> /etc/apt/sources.list
-echo "deb https://mirrors.ustc.edu.cn/ubuntu/ $release-updates main restricted universe multiverse" >> /etc/apt/sources.list
-echo "deb-src https://mirrors.ustc.edu.cn/ubuntu/ $release-updates main restricted universe multiverse" >> /etc/apt/sources.list
+echo "deb https://mirrors.aliyun.com/ubuntu/ $release-updates main restricted universe multiverse" >> /etc/apt/sources.list
+echo "deb-src https://mirrors.aliyun.com/ubuntu/ $release-updates main restricted universe multiverse" >> /etc/apt/sources.list
 echo -e "\n" >> /etc/apt/sources.list
-echo "deb https://mirrors.ustc.edu.cn/ubuntu/ $release-backports main restricted universe multiverse" >> /etc/apt/sources.list
-echo "deb-src https://mirrors.ustc.edu.cn/ubuntu/ $release-backports main restricted universe multiverse" >> /etc/apt/sources.list
+echo "deb https://mirrors.aliyun.com/ubuntu/ $release-backports main restricted universe multiverse" >> /etc/apt/sources.list
+echo "deb-src https://mirrors.aliyun.com/ubuntu/ $release-backports main restricted universe multiverse" >> /etc/apt/sources.list
 echo -e "\n## Not recommended" >> /etc/apt/sources.list
-echo "# deb https://mirrors.ustc.edu.cn/ubuntu/ $release-proposed main restricted universe multiverse" >> /etc/apt/sources.list
-echo "# deb-src https://mirrors.ustc.edu.cn/ubuntu/ $release-proposed main restricted universe multiverse" >> /etc/apt/sources.list
+echo "# deb https://mirrors.aliyun.com/ubuntu/ $release-proposed main restricted universe multiverse" >> /etc/apt/sources.list
+echo "# deb-src https://mirrors.aliyun.com/ubuntu/ $release-proposed main restricted universe multiverse" >> /etc/apt/sources.list
 
 apt-get update
 
